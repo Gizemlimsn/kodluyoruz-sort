@@ -1,0 +1,27 @@
+->[22,27,16,2,18,6] -> Insertion Sort
+
+->Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+ilk iki elemandan sorgulamaya başlayarak karşılaştırma yapar 22<27 doğru dizi [22,27,16,2,18,6]
+Üçüncü elemanı karşılaştırır 27<16 ? değil , 22<16 ? değil, 16 başa geldi [16,22,27,2,18,6]
+dördüncü eleman kontrol edilir 27<2 ? değil, 22<2 ? değil, 16<2 ? değil, 2 başa geldi [2,16,22,27,18,6]
+beşinci eleman kontrol edilir 27<18 ? değil, 22<18 ? değil, 16<18 ? doğru, 18 sayısı 16 ile 22 arasına geldi  [2,16,18,22,27,6]
+son eleman kontrol edilir 27<6 ? değil, 22<6? değil, 18<6 ? değil, 16<6? değil, 2<6 doğru, 6 sayısı 2 ile 16 arasına gelir [2,6,16,18,22,27]
+
+->Big-O gösterimini yazınız.
+0(n^2)'dir
+
+->Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+->Average case: Aradığımız sayının ortada olması
+->Worst case: Aradığımız sayının sonda olması
+->Best case: Aradığımız sayının dizinin en başında olması.
+
+Dizinin sıralı hali [2,6,16,18,22,27] olduğundan ve 18 ortada bir eleman olduğundan Average case durumuna uyar.
+
+->[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Dizinin elemanlarına bakılır en küçük 2 sayısı baştaki 7 sayısı ile yer değişikliği yapılır dizi [2,3,5,8,7,9,4,15,6]
+2 den büyük dizideki en küçük sayı 3 aynı yerinde kalır. [2,3,5,8,7,9,4,15,6]
+3 den büyük dizideki en küçük sayı 5 aynı yerinde kalır. [2,3,5,8,7,9,4,15,6]
+5 den büyük dizideki en küçük sayı 7 sayısı 8 ile yer değişikliği yapılır. [2,3,5,7,8,9,4,15,6]
