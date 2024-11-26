@@ -1,0 +1,12 @@
+->[16,21,11,8,12,22] -> Merge Sort
+
+->Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+Dizi ikiye bölünür [16,21,11] ve [8,12,22] şeklinde,
+Oluşan 2 dizi tekrar ikiye bölünür [16,21] ve [11], [8,12] ve[22] şeklinde
+Karşılaştırma yapılır 16<11 ? değil 11 başa gelir ve ilk birleştirme yapılır [11,16,21] diğer taraf karşılaştırılır 8<22? doğru 12<22? doğru diğer tarafta birleştirilir [8,12,22]
+Oluşan diziler karşılaştırılır 11<8 ? değil 8 başa, 11<12? doğru 8 den sonra 11 gelir, 16<12? değil 11den sonra 12 gelir, 16<22? doğru 12 den sonra 16 gelir, 21<22? doğru 16 dan sonra 21 gelir ve en son 22. Dizi [8,11,12,16,21,22] şeklinde birleşir.
+
+->Big-O gösterimini yazınız.
+
+O(n log n)'dir
